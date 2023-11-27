@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-
+import Navbar from './Navbar';
 function Header() {
   const Header = styled.header`
      width: 100%;
@@ -8,7 +8,7 @@ function Header() {
      div{
       background-color: royalblue;
       color: white;
-      padding: 5px;
+      padding: 8px;
       text-align: center;
       i{
         color: yellow;
@@ -26,10 +26,11 @@ function Header() {
   `
   return (
     <Header>
-       <div>
-       <i class="fa-solid fa-chess-queen"></i>
-         Become a member of <strong>BookmeBro</strong> and get amazing discounts and exclusive perks. <a href="#">Subscribe Now</a>
-       </div>
+      <div>
+        <i class="fa-solid fa-chess-queen"></i>
+        Become a member of <strong>BookmeBro</strong> and get amazing discounts and exclusive perks. <a href="#">Subscribe Now</a>
+      </div>
+      <Navbar />
     </Header>
   )
 }
